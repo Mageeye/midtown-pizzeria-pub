@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — Midtown Pizzeria & Pub · Trivia · Bingo · Hold'em</title>
+<meta name="description" content="What's happening at Midtown Pizzeria & Pub. Tuesday Texas Hold'em, Thursday Trivia Night, Saturday Mixtape Bingo. Liberal, Kansas.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="topstrip">
+  <span>★ Fresh · Different · Better ★</span>
+  <span class="sep desktop-only">·</span>
+  <span class="desktop-only">222 N Kansas Ave · Liberal, KS</span>
+  <span class="sep desktop-only">·</span>
+  <span class="desktop-only">(620) 309-4448</span>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Midtown Pizzeria & Pub seal">
+      <span class="wordmark">
+        <span class="big">Midtown</span>
+        <span class="small">Pizzeria &amp; Pub</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener" class="nav-cta-mobile">Order Online</a></li>
+    </ul>
+    <a class="nav-cta" href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener">Order Online</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding: 60px 28px 70px;">
+  <div class="hero-inner" style="grid-template-columns: 1fr; text-align: center;">
+    <div>
+      <div class="hero-eyebrow">Game Nights · Specials · Good Times</div>
+      <h1 style="font-size: clamp(36px, 5vw, 60px);">
+        <span class="script">What's cooking</span>
+        At Midtown
+      </h1>
+      <p class="lede" style="margin: 0 auto;">
+        Show up hungry, leave full. Three nights a week we put the games on the
+        table. Pull up a chair — every week, all year long.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WEEKLY EVENT CARDS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Every Week at Midtown</div>
+    <h2 class="section-title">The lineup</h2>
+    <div class="gold-rule"></div>
+    <p class="section-sub">Recurring weekly. No cover. Bring a team — or come solo and join one.</p>
+
+    <div class="events-grid">
+      <article class="event-card">
+        <img class="event-img" src="assets/events/holdem.png" alt="Tuesday Texas Hold'em night">
+        <div class="event-body">
+          <div class="when">★ Every Tuesday ★</div>
+          <h3>Texas Hold'em</h3>
+          <p>
+            Pull up a chair, ante up, and play your cards right. Cold beer, hot pizza,
+            and a friendly game of cards — that's a Tuesday at Midtown.
+          </p>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <img class="event-img" src="assets/events/trivia.png" alt="Thursday Trivia Night">
+        <div class="event-body">
+          <div class="when">★ Every Thursday ★</div>
+          <h3>Trivia Night</h3>
+          <p>
+            Bring your smartest friends and your dumbest friends — you'll need both.
+            Categories rotate. The pizza does not disappoint.
+          </p>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <img class="event-img" src="assets/events/bingo.png" alt="Saturday Mixtape Bingo">
+        <div class="event-body">
+          <div class="when">★ Every Saturday ★</div>
+          <h3>Mixtape Bingo</h3>
+          <p>
+            Bingo, but make it a playlist. Listen close — when the song hits your card,
+            shout it loud. Prizes, laughs, and a soundtrack you'll want to keep.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RECURRING TABLE -->
+<section class="section cream-deep tight">
+  <div class="section-inner">
+    <table class="recurring-table">
+      <caption>★ The Weekly Schedule ★</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>What's On</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="day">Mon – Fri</td>
+          <td><strong style="font-family: var(--font-heading); letter-spacing: 0.04em;">Lunch Specials</strong> — slice + salad bar, half sandwich + salad bar, or six wings + salad bar</td>
+          <td><span style="font-family: var(--font-mono); font-weight: 700; color: var(--barn-red);">11 AM – 3 PM · $9.99</span></td>
+        </tr>
+        <tr>
+          <td class="day">Tuesday</td>
+          <td><strong style="font-family: var(--font-heading); letter-spacing: 0.04em;">Texas Hold'em</strong> — cards on the table, beer in your hand</td>
+          <td><em>Evening</em></td>
+        </tr>
+        <tr>
+          <td class="day">Thursday</td>
+          <td><strong style="font-family: var(--font-heading); letter-spacing: 0.04em;">Trivia Night</strong> — teams welcome, prizes for the winners</td>
+          <td><em>Evening</em></td>
+        </tr>
+        <tr>
+          <td class="day">Saturday</td>
+          <td><strong style="font-family: var(--font-heading); letter-spacing: 0.04em;">Mixtape Bingo</strong> — bingo, but for music lovers</td>
+          <td><em>Evening</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-family: var(--font-body); font-style: italic; font-size: 14px; color: var(--tabletop-brown); text-align: center; margin-top: 22px;">
+      Event times announced weekly — call us at <a href="tel:+16203094448" style="font-style: normal;">(620) 309-4448</a> or check <a href="https://www.facebook.com/profile.php?id=61573493150277" target="_blank" rel="noopener" style="font-style: normal;">Facebook</a> for the latest.
+    </p>
+  </div>
+</section>
+
+<!-- HOST YOUR THING -->
+<section class="section">
+  <div class="section-inner narrow">
+    <div class="feature-box" style="padding: 32px 36px;">
+      <div class="feature-box-grid">
+        <div style="flex:1;">
+          <h3>Host Your Thing</h3>
+          <i class="when">birthdays · team nights · watch parties · whatever</i>
+          <p style="font-family: var(--font-body); font-size: 15px; color: var(--bean); margin-top: 10px; line-height: 1.65;">
+            We do parties, group reservations, and pizza buckets for the whole crew.
+            Call ahead and we'll set you up — patio, big tables, or the whole place
+            if the night calls for it.
+          </p>
+          <p style="margin-top: 14px;">
+            <a class="btn btn-primary" href="tel:+16203094448" style="font-size: 12px; padding: 12px 22px;">Call (620) 309-4448</a>
+          </p>
+        </div>
+        <div class="price-block">
+          <div class="lbl">Bucket of Spaghetti</div>
+          <div class="big">$36.99</div>
+          <div style="font-family: var(--font-body); font-style: italic; font-size: 12px; color: var(--tabletop-brown); margin-top: 6px;">serves 4 · + 4 bread sticks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="callout-strip">
+  ★ Tuesday Hold'em <span class="sep">·</span> Thursday Trivia <span class="sep">·</span> Saturday Bingo ★
+</div>
+
+<!-- TOAST CTA -->
+<section class="toast-cta-band">
+  <h3>Headed our way?</h3>
+  <p>Order pizza ahead and walk in ready to play. Easy.</p>
+  <a class="btn btn-xl" href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener">Order on Toast →</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-script">Fresh. Different. Better.</div>
+    <div class="footer-tag">★ Right in the Heart of Good Times ★</div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>222 North Kansas Avenue<br>Liberal, Kansas 67901</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=222+N+Kansas+Ave+Liberal+KS+67901" target="_blank" rel="noopener">Directions →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Sun – Thu · 11 AM – 9 PM<br>Fri – Sat · 11 AM – 10 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+16203094448">(620) 309-4448</a>
+        <a href="mailto:halljeff638@gmail.com">halljeff638@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Order &amp; Follow</h4>
+        <a href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener">Order on Toast →</a>
+        <a href="https://www.facebook.com/profile.php?id=61573493150277" target="_blank" rel="noopener">Facebook →</a>
+      </div>
+    </div>
+    <div class="footer-fine">© Midtown Pizzeria &amp; Pub · Est. 2025 · Liberal, Kansas</div>
+  </div>
+</footer>
+
+</body>
+</html>
