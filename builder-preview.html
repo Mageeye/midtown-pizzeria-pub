@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builder Preview - Midtown Pizzeria & Pub</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="topstrip">
+  <span>★ Fresh · Different · Better ★</span>
+  <span class="sep desktop-only">·</span>
+  <span class="desktop-only">222 N Kansas Ave · Liberal, KS</span>
+  <span class="sep desktop-only">·</span>
+  <span class="desktop-only">(620) 309-4448</span>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-logo" aria-label="Midtown Pizzeria & Pub home">
+      <img src="assets/logo.png" alt="Midtown Pizzeria & Pub seal">
+      <span class="wordmark">
+        <span class="big">Midtown</span>
+        <span class="small">Pizzeria &amp; Pub</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener" class="nav-cta-mobile">Order Online</a></li>
+    </ul>
+    <a class="nav-cta" href="https://www.toasttab.com/local/order/midtown-pizzeria-and-pub-new-222-north-kansas-avenue/r-29b31739-e096-4428-b039-4b5672bd577b" target="_blank" rel="noopener">Order Online</a>
+  </nav>
+</header>
+
+<main class="builder-preview-shell">
+  <div id="builder-missing-config" class="builder-preview-empty" hidden>
+    <div class="section-eyebrow">Builder.io Preview</div>
+    <h1>Connect your Builder space</h1>
+    <p>Add your Builder public API key and model name to this URL:</p>
+    <code id="builder-preview-url"></code>
+  </div>
+
+  <div id="builder-preview-root" class="builder-preview-root" hidden></div>
+</main>
+
+<script>
+(() => {
+  const params = new URLSearchParams(window.location.search);
+  const apiKey = params.get("apiKey") || params.get("key");
+  const model = params.get("model") || "page";
+  const contentId = params.get("contentId") || params.get("content");
+  const root = document.getElementById("builder-preview-root");
+  const empty = document.getElementById("builder-missing-config");
+  const previewUrl = document.getElementById("builder-preview-url");
+
+  if (!apiKey) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("apiKey", "YOUR_PUBLIC_API_KEY");
+    url.searchParams.set("model", model);
+    previewUrl.textContent = url.toString();
+    empty.hidden = false;
+    return;
+  }
+
+  const component = document.createElement("builder-component");
+  component.setAttribute("model", model);
+  component.setAttribute("api-key", apiKey);
+
+  if (contentId) {
+    component.setAttribute("content-id", contentId);
+  }
+
+  root.appendChild(component);
+  root.hidden = false;
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = "https://cdn.builder.io/js/webcomponents";
+  document.body.appendChild(script);
+})();
+</script>
+
+</body>
+</html>

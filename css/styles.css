@@ -623,6 +623,53 @@ p.section-sub {
 }
 
 /* ==========================================================================
+   BUILDER.IO PREVIEW ROUTE
+   ========================================================================== */
+.builder-preview-shell {
+  min-height: 70vh;
+  padding: 48px 28px 80px;
+}
+.builder-preview-root {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.builder-preview-empty {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 2px solid var(--barn-red);
+  background: var(--warm-cream);
+  box-shadow: inset 0 0 0 3px var(--warm-cream), inset 0 0 0 4px var(--chinese-gold);
+  padding: 32px;
+  text-align: center;
+}
+.builder-preview-empty h1 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  color: var(--barn-red);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.builder-preview-empty p {
+  font-family: var(--font-body);
+  color: var(--bean);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+.builder-preview-empty code {
+  display: block;
+  overflow-wrap: anywhere;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--bean);
+  background: rgba(204,153,1,0.16);
+  border: 1px solid rgba(204,153,1,0.55);
+  padding: 14px;
+  text-align: left;
+}
+
+/* ==========================================================================
    MENU PAGE — print-style cream paper
    ========================================================================== */
 .menu-wrap {
